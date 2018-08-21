@@ -1,10 +1,13 @@
 package com.plugin.gradle.lucio.dagger2.di.component
 
+import com.plugin.gradle.lucio.dagger2.di.module.CusMapKeyModule
+import com.plugin.gradle.lucio.dagger2.di.module.DrinkModule
+import com.plugin.gradle.lucio.dagger2.di.module.FruitModule
 import com.plugin.gradle.lucio.dagger2.di.module.MainModule
 import com.plugin.gradle.lucio.dagger2.di.scope.ActivityScope
-import com.plugin.gradle.lucio.dagger2.domain.StudentBean
 import com.plugin.gradle.lucio.dagger2.ui.Test1Activity
 import com.plugin.gradle.lucio.dagger2.ui.Test2Activity
+import com.plugin.gradle.lucio.dagger2.ui.Test3Activity
 import dagger.Component
 
 /**
@@ -15,12 +18,16 @@ import dagger.Component
  * @Version
  */
 @ActivityScope
-@Component(modules = [MainModule::class])
+@Component(modules = [MainModule::class, DrinkModule::class, FruitModule::class, CusMapKeyModule::class])
 interface MainCompoment {
 
     fun inject(test1Activity: Test1Activity)
 
     fun inject(test2Activity: Test2Activity)
 
-    fun provideStudentBean(): StudentBean
+    fun inject(test3Activity: Test3Activity)
+
+//    fun provideStudentBean(): StudentBean
+//
+//    fun provideGirlsBean(): GirlsBean
 }

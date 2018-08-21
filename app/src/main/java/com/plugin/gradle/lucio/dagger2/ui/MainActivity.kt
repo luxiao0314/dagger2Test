@@ -13,5 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         btn_test1.setOnClickListener { startActivity(Intent(this,Test1Activity::class.java)) }
         btn_test2.setOnClickListener { startActivity(Intent(this,Test2Activity::class.java)) }
+        btn_test3.setOnClickListener { startActivity(Intent(this,Test3Activity::class.java)) }
+        btn_test4.setOnClickListener { startActivity(Intent(this, Test4Activity::class.java)) }
     }
 }

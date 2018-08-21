@@ -8,6 +8,7 @@ import com.plugin.gradle.lucio.dagger2.domain.TeacherBean
 import dagger.Module
 import dagger.Provides
 
+
 /**
  * @Description
  * @Author sean
