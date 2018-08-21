@@ -5,6 +5,8 @@ import com.plugin.gradle.lucio.dagger2.di.module.DrinkModule
 import com.plugin.gradle.lucio.dagger2.di.module.FruitModule
 import com.plugin.gradle.lucio.dagger2.di.module.MainModule
 import com.plugin.gradle.lucio.dagger2.di.scope.ActivityScope
+import com.plugin.gradle.lucio.dagger2.domain.GirlsBean
+import com.plugin.gradle.lucio.dagger2.domain.StudentBean
 import com.plugin.gradle.lucio.dagger2.ui.Test1Activity
 import com.plugin.gradle.lucio.dagger2.ui.Test2Activity
 import com.plugin.gradle.lucio.dagger2.ui.Test3Activity
@@ -27,7 +29,7 @@ interface MainCompoment {
 
     fun inject(test3Activity: Test3Activity)
 
-//    fun provideStudentBean(): StudentBean
-//
-//    fun provideGirlsBean(): GirlsBean
+    fun provideStudentBean(): StudentBean
+
+    fun provideGirlsBean(): GirlsBean
 }
