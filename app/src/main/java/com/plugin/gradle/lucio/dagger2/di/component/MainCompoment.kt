@@ -32,4 +32,6 @@ interface MainCompoment {
     fun provideStudentBean(): StudentBean
 
     fun provideGirlsBean(): GirlsBean
+
+    fun sonComponent(): SonComponent.Builder  // 用来创建 Subcomponent
 }

@@ -1,5 +1,6 @@
 package com.plugin.gradle.lucio.dagger2.di.module
 
+import com.plugin.gradle.lucio.dagger2.di.component.SonComponent
 import com.plugin.gradle.lucio.dagger2.di.scope.ActivityScope
 import com.plugin.gradle.lucio.dagger2.domain.BoysBean
 import com.plugin.gradle.lucio.dagger2.domain.GirlsBean
@@ -16,7 +17,7 @@ import dagger.Provides
  * @Date 20/08/2018 7:51 PM
  * @Version
  */
-@Module
+@Module(subcomponents = [SonComponent::class])
 class MainModule {
 
     @Provides

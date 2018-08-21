@@ -21,6 +21,7 @@
         <activity android:name=".ui.Test2Activity"/>
         <activity android:name=".ui.Test3Activity"/>
         <activity android:name=".ui.Test4Activity"/>
+        <activity android:name=".ui.Test5Activity"/>
     </application>
 
 </manifest>
